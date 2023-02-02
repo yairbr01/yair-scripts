@@ -8,9 +8,8 @@ add_action( 'jet-engine-booking/publish_payment', function( $data ) {
 	}	
 	
 	global $woocommerce;
-  $woocommerce->cart->empty_cart();
-  $woocommerce->cart->add_to_cart($product_id);	
-
+  	$woocommerce->cart->empty_cart();
+  	$woocommerce->cart->add_to_cart($product_id);	
 	$cookie_value = $product_id;
 	setcookie({cookie_name}, $cookie_value, 0, "/");
 }
