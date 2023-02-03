@@ -4,7 +4,7 @@
 document.addEventListener('DOMContentLoaded', () => {	
     var price_fileds = document.querySelectorAll('[id*="price"]');	
     for (i = 0; i < price_fileds.length; ++i) {		
-		new Cleave("#" + price_fileds[i].id, {			
+	new Cleave("#" + price_fileds[i].id, {			
             numeral: true,
             numeralDecimalMark: ".",
 			prefix: "₪",
@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }	
     var phone_fileds = document.querySelectorAll('[id*="phone"]');	
     for (i = 0; i < phone_fileds.length; ++i) {		
-	    console.log(i);
-		new Cleave("#" + phone_fileds[i].id, {			
+	new Cleave("#" + phone_fileds[i].id, {			
             phone: true,
             delimiter: "-",
             phoneRegionCode: 'IL'
