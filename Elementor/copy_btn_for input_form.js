@@ -1,4 +1,5 @@
 <script>
+// Creating a button to copy a field from a form
 
 function CopyUrlFromInput() {
     var copyText = document.getElementById("form-field-url");
