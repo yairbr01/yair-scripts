@@ -1,0 +1,28 @@
+<style>
+/* Changing the scrollbar design in the browser */
+
+/* width */
+::-webkit-scrollbar {
+  width:10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #47E7E3;
+  border-radius:100px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #747DF3;
+}
+
+</style>
