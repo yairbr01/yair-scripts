@@ -25,7 +25,7 @@ function get_previous_post_id( $post_id ) {
 	$current_cat_id = '25847';
 	
 	//Set arguments to pull posts from the category
-    $args = array('category'=>$current_cat_id,'numberposts'=> 2,'orderby'=>'post_date','order'=> 'DESC');
+	$args = array('category'=>$current_cat_id,'numberposts'=> 2,'orderby'=>'post_date','order'=> 'DESC');
 	
 	//pull posts from the category
 	$posts = get_posts($args);
