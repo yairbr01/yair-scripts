@@ -1,0 +1,40 @@
+<style>
+// Floating label design
+
+selector .elementor-field-group {
+  position: relative;
+}
+selector .elementor-field-label {
+  position: absolute;
+  top: 12px;
+  right: 23px;
+  transition-duration: .2s;
+}
+
+selector .focused .elementor-field-label {
+    line-height: 1.5;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+    font-size: 15px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    right: 20px;
+    background-color: #0A2336;
+
+}
+
+selector .elementor-field-group:not(.elementor-field-type-upload) .elementor-field:not(.elementor-select-wrapper):focus, selector .elementor-field-group .elementor-select-wrapper select:focus {
+	box-shadow: none !important;
+}
+
+.elementor-field-group-user_type > .elementor-field-label {
+	line-height: 2.5;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+    font-size: 15px !important;
+    background-color: #FFFFFF !important;
+    z-index: 1;
+    right: 5px;
+}
+
+</style>
