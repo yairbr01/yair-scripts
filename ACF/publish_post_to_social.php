@@ -1,6 +1,10 @@
 <?php
 // Publishing the post to social networks (Twitter / Telegram) after publication. The posting depends on a custom switcher type field
 
+// Download the "TwitterAPIExchange.php" file from the URL blow and uploud it to "php" folder in the theme directory. 
+// https://github.com/J7mbo/twitter-api-php/blob/master/TwitterAPIExchange.php
+
+require_once( get_template_directory() . '/php/TwitterAPIExchange.php' );
 function publish_post_in_social( $post_id, $post, $update, $post_before ) {
 		
 	$post_status = get_post_status( $post_id );
