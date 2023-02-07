@@ -28,14 +28,14 @@ function popup_shabat() {
 	$times_array = json_decode(json_encode ( $times ) , true);
 	
 	$sunset = date('H:i:s', strtotime( $times_array['sunset'] ));
-	$tzeit42min = date('H:i:s', strtotime( $times_array['tzeit42min'] ));
+	$tzeit = date('H:i:s', strtotime( $times_array['tzeit42min'] ));
 		
 	$holidays = array( "Rosh Hashana $hebrew_year", 'Rosh Hashana II', 'Yom Kippur', 'Sukkot I', 'Shmini Atzeret', 'Pesach I', 'Pesach VII', 'Shavuot I' );
 	$erev_holidays = array( 'Erev Rosh Hashana', 'Erev Yom Kippur', 'Erev Sukkot', 'Sukkot VII (Hoshana Raba)', 'Erev Pesach', "Pesach VI (CH''M)", 'Erev Shavuot' );
 	
 	foreach ( $events as $event ) {
 		if ( in_array($event, $holidays ) ) {
-			if ( $time < $tzeit42min ) {
+			if ( $time < $tzeit ) {
 				$show_popup = true;
 			}
 		} elseif ( in_array($event, $erev_holidays ) ) {
@@ -48,7 +48,7 @@ function popup_shabat() {
 				$show_popup = true;
 			}
 		} elseif ( $day == '6' ) {
-			if ( $time < $tzeit42min ) {
+			if ( $time < $tzeit ) {
 				$show_popup = true;
 			}	
 		}	
