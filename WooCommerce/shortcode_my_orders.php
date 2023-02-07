@@ -1,5 +1,5 @@
 <?php
-// Shortcode for get just "my orders" pat of "my account".
+// Shortcode for get just "my orders" part of "my account".
 
 function custom_my_orders_shortcode() {
    ob_start();
