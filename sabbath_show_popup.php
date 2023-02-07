@@ -55,7 +55,7 @@ function popup_shabat() {
 	}
 	
 	if ( $show_popup ) {
-		return '<script type="text/javascript"> function codeAddress() { elementorProFrontend.modules.popup.showPopup( { id: ' . $popup_id . ' } ); } window.onload = codeAddress;</script>';
+		return '<script type="text/javascript"> function popup_shabat_func() { elementorProFrontend.modules.popup.showPopup( { id: ' . $popup_id . ' } ); } window.onload = popup_shabat_func;</script>';
 	}
 }
 add_shortcode( 'show_popup_shabat', 'popup_shabat' );
