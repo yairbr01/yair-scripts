@@ -4,6 +4,7 @@
 // If it is a Saturday / holiday = checks if the tzeit has passed = if no shows a popup
 // According to time zone "Asia/Jerusalem"
 // You can change the time of tzeit
+// Times and holidays data is taken from the Hebcal.com API
 
 function popup_shabat() {
     
