@@ -46,15 +46,15 @@ function popup_shabat() {
 		}	
 	}
 
-    if ( $day == '5' ) {
-        if ( $time > $sunset ) {
-            $show_popup = true;
-        }
-    } elseif ( $day == '6' ) {
-        if ( $time < $tzeit ) {
-            $show_popup = true;
-        }	
-    }
+	if ( $day == '5' ) {
+        	if ( $time > $sunset ) {
+            		$show_popup = true;
+        	}
+	} elseif ( $day == '6' ) {
+        	if ( $time < $tzeit ) {
+            		$show_popup = true;
+        	}	
+    	}
 	
 	if ( $show_popup ) {
 		return '<script type="text/javascript"> function popup_shabat_func() { elementorProFrontend.modules.popup.showPopup( { id: ' . $popup_id . ' } ); } window.onload = popup_shabat_func;</script>';
